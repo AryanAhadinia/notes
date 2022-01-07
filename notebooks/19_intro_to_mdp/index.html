@@ -37,14 +37,14 @@ metadata: notebooks_19_intro_to_mdp_metadata
 <p>A representation of the environment's features at a specific time is called state and shown by $s$. Thus, any input from the agent’s sensors can play an important role in state formation. The $S$ state set is a set of different states, represented as $s$ which shows the status of the environment. Each MDP consists of some states, which some of them are stopping state or so called terminal state. Terminal state is a state in which no action could be taken. When agent enters a stopping state, sum of rewards, return, can be computed.</p>
 <p>As an example, consider a robot car that wants to reach its destination as quickly as possible. The engine condition of this car can be cool, warm, or overheated depending on its speed.So in the above example, set of states would be {cool, warm, overheated} .Notice that overheated is a terminal state.</p>
 <p align="center">
-<image src="./cool.jpg"/>
-<image src="./warm.jpg"/>
-<image src="./overheated.jpg"/>
+<image src="cool.jpg"/>
+<image src="warm.jpg"/>
+<image src="overheated.jpg"/>
 </p>
 <h3>Actions</h3>
 <p>Actions are set of operations an agent is allowed to do in the given environment. The set of actions is usually shown with $A$. In the robot car example, the machine can increase or decrease its speed. So the actions' set would be {slow, fast}</p>
 <p align="center">
-<image src="./action.jpg"/>
+<image src="action.jpg"/>
 </p>
 <h3>Transition Model</h3>
 <p>At each state, the agent decides which action to perform. The resulting state ($s'$) depends on both the current state ($s$) and the action performed by the agent ($a$). The transition model $T(s, a, s’)$ gives probability $P(s’|s, a)$, that is, the probability of landing up in the new  state $s’$ given that the agent takes an action, $a$, in the given state, $s$.</p>
@@ -56,7 +56,7 @@ metadata: notebooks_19_intro_to_mdp_metadata
 <p>In the machine robot example, we assume that the environment is stochastic. The probability of transitions is determined based on the current state, action, and next state.
 One of the possible transitions is shown in the figure below.</p>
 <p align="center">
-<image src="./transition.jpg"/>
+<image src="transition.jpg"/>
 </p>
 <h3>Rewards</h3>
 <p>The reward function, quantifies the usefulness of taking a specific action and entering a specific state. These rewards incorporate the action costs in addition to any prizes or penalties that may be given. Negative rewards are called punishments. The general form of the reward function is shown as $R(s, a, s')$. But in some MDPs the reward function is independent from the resulting state or both resulting state and action. In those models reward function is shown with $R(s, a)$ and $R(s)$ respectively.</p>
@@ -65,7 +65,7 @@ Sum of the rewards is called <em>utility</em> or <em>return</em>.</p>
 <p>Usually the performance of the agent, which is also called <em>utility</em>, is measured by the sum of rewards on the visited path. But other utility functions are also possible. General form of utility is shown by $U_h[s_0,s_1, s_2, ..., s_N]$.  </p>
 <p>In the robot car example, the robot must reach its destination as quickly as possible, so the high-speed reward must be considered more than the low-speed, e.g. +2 and +1 may be considered. But reward should be assigned in a way to prevent the robot from going to overheated state. So -10 is assigned to entering the overheated state.</p>
 <p align="center">
-<image src="./reward.jpg"/>
+<image src="reward.jpg"/>
 </p>
 <h3>Formalization</h3>
 <p>By combining the concepts which were explained above the complete formulation for Markov Decision Process is achieved as below.</p>
@@ -92,7 +92,7 @@ Sum of the rewards is called <em>utility</em> or <em>return</em>.</p>
 </ul>
 <p>In the robot car example, the search is as shown below.</p>
 <p align="center">
-<image src="./tree.png"/>
+<image src="tree.png"/>
 </p>
 <h2>Utilities of Sequences</h2>
 <p>It's easy to choose between sequence of [1, 2, 2] and [2, 3, 4]. Obviously more utility as well as more reward in each step is gained . But choosing between [1, 0, 0] and [0, 0, 1] is not that easy. This motivates us to consider the time which the reward is being received. In most cases, it's preferred to gain the rewards as soon as possible.</p>
