@@ -5,26 +5,26 @@ metadata: notebooks_19_intro_to_mdp_metadata
 <h1>Introduction to Markov Decision Process</h1>
 <h2>Table of Contents</h2>
 <ol>
-<li><a href="Introduction">Introduction</a></li>
-<li><a href="Markov_Decision_Process">Markov Decision Process</a><ol>
-<li><a href="States">States</a></li>
-<li><a href="Actions">Actions</a></li>
-<li><a href="Transition_Model">Transition Model</a></li>
-<li><a href="Rewards">Rewards</a></li>
-<li><a href="Formalization">Formalization</a></li>
-<li><a href="Policy">Policy</a></li>
+<li><a href="#Introduction">Introduction</a></li>
+<li><a href="#Markov_Decision_Process">Markov Decision Process</a><ol>
+<li><a href="#States">States</a></li>
+<li><a href="#Actions">Actions</a></li>
+<li><a href="#Transition_Model">Transition Model</a></li>
+<li><a href="#Rewards">Rewards</a></li>
+<li><a href="#Formalization">Formalization</a></li>
+<li><a href="#Policy">Policy</a></li>
 </ol>
 </li>
-<li><a href="MDP_Search_Trees">MDP Search Trees</a></li>
-<li><a href="Utilities_of_Sequences">Utilities of Sequences</a></li>
-<li><a href="Discounting">Discounting</a></li>
-<li><a href="Finite_and_infinite_horizons">Finite and infinite horizons</a></li>
-<li><a href="Infinite_Utilities">Infinite Utilities</a></li>
-<li><a href="Bellman_Equation">Bellman Equation</a></li>
-<li><a href="Time_Limited_Values">Time Limited Values</a></li>
-<li><a href="Implementation">Implementation</a></li>
-<li><a href="Conclusion">Conclusion</a></li>
-<li><a href="References">References</a></li>
+<li><a href="#MDP_Search_Trees">MDP Search Trees</a></li>
+<li><a href="#Utilities_of_Sequences">Utilities of Sequences</a></li>
+<li><a href="#Discounting">Discounting</a></li>
+<li><a href="#Finite_and_infinite_horizons">Finite and infinite horizons</a></li>
+<li><a href="#Infinite_Utilities">Infinite Utilities</a></li>
+<li><a href="#Bellman_Equation">Bellman Equation</a></li>
+<li><a href="#Time_Limited_Values">Time Limited Values</a></li>
+<li><a href="#Implementation">Implementation</a></li>
+<li><a href="#Conclusion">Conclusion</a></li>
+<li><a href="#References">References</a></li>
 </ol>
 <h2>Introduction</h2>
 <p>In nature, learning by trial and error is the most common way of learning. learning by trial and error is called Reinforcement Learning (RL) in computer literature. Markov Decision Process (MDP) is a foundational element of formulating reinforcement learning mathematically. In a typical Reinforcement Learning  problem, there is a learner and a decision maker called agent. The surrounding which agent interacts with is called environment. The environment provides rewards and a new state based on the actions the agent perform. All these could be modeled in a single MDP. The environment is modeled with states and agent's possible decisions are modeled by actions. Since In real problems unexpected events may happen, agent's actions may not lead to expected results. This is why MDPs with stochastic transition models are used. In reinforcement learning, agent is not told how it should act but it is presented with rewards whether positive or negative based on its actions. These rewards are modeled by reward function in an MDP. Solving an MDP means to find the best way that the agent can act. There are different ways to solve an MDP which all of them are based on Bellman equation, So in order to find the best guideline for the agent Bellman equation should be solved.</p>
