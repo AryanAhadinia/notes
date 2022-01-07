@@ -114,6 +114,11 @@ notebooks:
     kind: S2021, LN, Notebook
     link: /notes/notebooks/18_reinforcement_learning/
     text: <p>Reinforcement Learning</p>
+  - md: notebooks/19_intro_to_mdp/index.md
+    kind: F2021, LN
+    metadata: notebooks/19_intro_to_mdp/metadata.yml
+    text: Introduction to Markov Decision Process
+    link: /notes/notebooks/19_intro_to_mdp/
 kind: Index
 search:
   content: true
