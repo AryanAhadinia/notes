@@ -115,7 +115,7 @@ $$ max_\pi E \Bigg[ \sum_{i=0}^\infty \gamma^ir_i \Bigg] $$</p>
 <p>By considering all forward steps and choosing the step which maximizes the utility, $V^\star$ can be formulated as
 $$ V^\star(s) = max_a Q^\star(s, a) . $$
 Then by calculating expectation on earned utility by marginalizing on all possible next states which can be succeeded after action $a$ in state $s$, $Q^\star$ will be written as
-$$ Q^^\star(s, a) = \sum_{s'}T(s, a, s')\big[R(s, a, s') + \gamma V^\star(s') \big].$$</p>
+$$ Q^\star(s, a) = \sum_{s'}T(s, a, s')\big[R(s, a, s') + \gamma V^\star(s') \big].$$</p>
 <p>Since $V^\star$ and $Q^\star$ are jointly recursive, It is possible to replace $Q^\star$ with $V^\star$.
 $$ V^\star(s) = max_a \sum_{s'}T(s, a, s')\big[R(s, a, s') + \gamma V^\star(s') \big] $$</p>
 <p>Equation above is called as <em>bellman equation</em>.</p>
